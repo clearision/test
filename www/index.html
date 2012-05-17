@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Документ без названия</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script><script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+
+<div id="content"></div>
+
+<script type="text/template" id="listTemplate">
+	<ul></ul>
+	<input type="text" id="newUsername" placeholder="Username">
+	<input type="tel" id="newPhoneNum" placeholder="Phone Number" pattern="[0-9]{,6}">
+	<button id="add">Add New</button>
+</script>
+
+<script type="text/template" id="itemTemplate">
+	<input type="text" id="username" value="<%=username%>"> <input type="tel" id="phoneNum" value="<%=phoneNum%>" pattern="[0-9]{,6}"> <input type="image" src="img/mod.png" id="modImg" alt="Modify" width="16px" height="16px"> <input type="image" src="img/del.png" id="delImg" alt="Delete" width="16px" height="16px">
+</script>
+
+</body>
+</html>
